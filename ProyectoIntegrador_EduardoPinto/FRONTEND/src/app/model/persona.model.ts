@@ -3,10 +3,14 @@ export class persona{
     nombre: string;
     apellido: string;
     img: string;
+    acercade: string;
+    titulo: string;
 
-    constructor(nombre: string, apellido: string, img: string){
+    constructor(nombre: string, apellido: string, img: string, acercade: string, titulo: string){
         this.nombre = nombre;
         this.apellido = apellido;
         this.img = img;
+        this.acercade = acercade;
+        this.titulo = titulo;
     }
 }
