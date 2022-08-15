@@ -16,14 +16,16 @@
                     </td>
                     <td>{{Proyecto.descripcionE}}</td>
                     <td>{{Proyecto.urlE}}</td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-light" routerLink="./editproyec/{{Proyecto.id}}">
-                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>                  
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
-                    </td>
+                    <div class="col-lg-4">
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-light" routerLink="./editproyec/{{Proyecto.id}}">
+                                <i class="bi bi-pencil-fill"></i></button>
+                        </td>                  
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                                <i class="bi bi-trash-fill"></i></button>
+                        </td>
+                    </div>
                 </tr>
             </tbody>
         </table>
