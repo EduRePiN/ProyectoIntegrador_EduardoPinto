@@ -6,10 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter @Setter
+
 @Entity
 public class Persona {
     @Id
@@ -18,21 +16,81 @@ public class Persona {
     
     @NotNull
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
-    private String nombre;
+    private String nombreE;
     
     @NotNull
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
-    private String apellido;
+    private String apellidoE;
     
     @NotNull
     @Size(min = 1, max = 500, message = "no cumple con la longitud")
-    private String acercaDe;
+    private String acercaDeE;
     
     @NotNull
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
-    private String titulo;
+    private String tituloE;
     
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
-    private String img;
+    private String imgE;
 
+    public Persona() {
+    }
+
+    public Persona(String nombreE, String apellidoE, String acercaDeE, String tituloE, String imgE) {
+        this.nombreE = nombreE;
+        this.apellidoE = apellidoE;
+        this.acercaDeE = acercaDeE;
+        this.tituloE = tituloE;
+        this.imgE = imgE;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombreE() {
+        return nombreE;
+    }
+
+    public void setNombreE(String nombreE) {
+        this.nombreE = nombreE;
+    }
+
+    public String getApellidoE() {
+        return apellidoE;
+    }
+
+    public void setApellidoE(String apellidoE) {
+        this.apellidoE = apellidoE;
+    }
+
+    public String getAcercaDeE() {
+        return acercaDeE;
+    }
+
+    public void setAcercaDeE(String acercaDeE) {
+        this.acercaDeE = acercaDeE;
+    }
+
+    public String getTituloE() {
+        return tituloE;
+    }
+
+    public void setTituloE(String tituloE) {
+        this.tituloE = tituloE;
+    }
+
+    public String getImgE() {
+        return imgE;
+    }
+
+    public void setImgE(String imgE) {
+        this.imgE = imgE;
+    }
+
+    
 }

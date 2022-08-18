@@ -2,16 +2,16 @@
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <img src="../../../assets/fotoperfil.png" class="img-fluid img-perfil" id="fotodeperfil">
     </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
-        <p>{{persona.titulo}}</p>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngFor="let Persona of persona">
+        <p id="nombre">{{Persona.nombreE}} {{Persona.apellidoE}}</p>
+        <p>{{Persona.tituloE}}</p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let Persona of persona">
         <span>
             <h1>Acerca de mí</h1>
-            <p>{{persona.acercade}}</p>
+            <p>{{Persona.acercadeE}}</p>
             <div *ngIf="isLogged">
-                <button class="btn btn-outline-light" routerLink="/editacercade/{{persona.acercade}}">
+                <button class="btn btn-outline-light" routerLink="./editacercade/{{Persona.acercadeE}}">
                     <i class="bi bi-pencil-fill"></i></button>
             </div>
         </span>
