@@ -24,7 +24,7 @@ public class Persona {
     
     @NotNull
     @Size(min = 1, max = 500, message = "no cumple con la longitud")
-    private String acercaDeE;
+    private String descripE;
     
     @NotNull
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
@@ -39,7 +39,7 @@ public class Persona {
     public Persona(String nombreE, String apellidoE, String acercaDeE, String tituloE, String imgE) {
         this.nombreE = nombreE;
         this.apellidoE = apellidoE;
-        this.acercaDeE = acercaDeE;
+        this.descripE = descripE;
         this.tituloE = tituloE;
         this.imgE = imgE;
     }
@@ -68,12 +68,12 @@ public class Persona {
         this.apellidoE = apellidoE;
     }
 
-    public String getAcercaDeE() {
-        return acercaDeE;
+    public String getDescripE() {
+        return descripE;
     }
 
-    public void setAcercaDeE(String acercaDeE) {
-        this.acercaDeE = acercaDeE;
+    public void setDescripE(String descripE) {
+        this.descripE = descripE;
     }
 
     public String getTituloE() {

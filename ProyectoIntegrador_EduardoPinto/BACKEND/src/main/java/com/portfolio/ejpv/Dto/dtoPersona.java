@@ -15,7 +15,7 @@ public class dtoPersona {
     @NotBlank
     private String imgE;
     @NotBlank
-    private String acercadeE;
+    private String descripE;
     @NotBlank
     private String tituloE;
 
@@ -26,7 +26,7 @@ public class dtoPersona {
         this.nombreE = nombreE;
         this.apellidoE = apellidoE;
         this.imgE = imgE;
-        this.acercadeE = acercadeE;
+        this.descripE = acercadeE;
         this.tituloE = tituloE;
     }
 
@@ -54,12 +54,12 @@ public class dtoPersona {
         this.imgE = imgE;
     }
 
-    public String getAcercadeE() {
-        return acercadeE;
+    public String getDescripE() {
+        return descripE;
     }
 
-    public void setAcercadeE(String acercadeE) {
-        this.acercadeE = acercadeE;
+    public void setDescripE(String descripE) {
+        this.descripE = descripE;
     }
 
     public String getTituloE() {
