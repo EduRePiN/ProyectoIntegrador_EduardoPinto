@@ -16,8 +16,8 @@ export class PersonaService {
     return this.httpClient.get<Persona[]>(this.URL+ 'lista');
   }
 
-  public detail(id: number): Observable<Persona>{
-    return this.httpClient.get<Persona>(this.URL + `detail\${id}`);
+  public detail(id:number): Observable<Persona>{
+    return this.httpClient.get<Persona>(this.URL + `detail/${id}`);
   }
 
   public save(persona: Persona): Observable<any>{
