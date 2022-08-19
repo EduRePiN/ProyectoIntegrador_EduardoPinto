@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Acercade } from 'src/app/model/acercade';
-import { AcercadeService } from 'src/app/service/acercade.service';
+import { Persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
   selector: 'app-edit-acercade',
@@ -9,19 +9,19 @@ import { AcercadeService } from 'src/app/service/acercade.service';
   styleUrls: ['./edit-acercade.component.css']
 })
 export class EditAcercadeComponent implements OnInit {
-  acercade: Acercade = null;
+  persona: Persona = null;
 
   constructor(
-    private acercaDeS: AcercadeService,
+    private personaService: PersonaService,
     private activatedRouter: ActivatedRoute,
     private router: Router
   ) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.acercaDeS.detail(id).subscribe(
+    this.personaService.detail(id).subscribe(
       data =>{
-        this.acercade = data;
+        this.persona = data;
       }, err =>{
         alert("Error al modificar");
         this.router.navigate(['']);
@@ -31,7 +31,7 @@ export class EditAcercadeComponent implements OnInit {
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.acercaDeS.update(id, this.acercade).subscribe(
+    this.personaService.update(id, this.persona).subscribe(
       data =>{
         this.router.navigate(['']);
       }, err =>{

@@ -1,13 +1,30 @@
-<div class="container" *ngIf="acercade">
+<div class="container" *ngIf="persona">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="descripcionE">Descripcion de Acerca de mí</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="acercade.descripcionE" required>
+                    <label for="nombreE">Nombre</label>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="persona.nombreE" required>
                 </div>
+                <div class="form-group">
+                    <label for="apellidoE">Apellido</label>
+                    <input type="text" class="form-control" id="apellidoE" name="apellidoE" [(ngModel)]="persona.apellidoE" required>
+                </div>
+                <div class="form-group">
+                    <label for="tituloE">Título</label>
+                    <input type="text" class="form-control" id="tituloE" name="tituloE" [(ngModel)]="persona.tituloE" required>
+                </div>
+                <div class="form-group">
+                    <label for="acercadeE">Acerca del usuario</label>
+                    <input type="text" class="form-control" id="acercadeE" name="acercadeE" [(ngModel)]="persona.acercadeE" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgE">Imagen de Perfil</label>
+                    <input type="text" class="form-control" id="imgE" name="imgE" [(ngModel)]="persona.imgE" required>
+                </div>
+            
                 <button class="btn btn-primary">
-                    Actualizar
+                    Editar usuario
                 </button>
             </form>
         </div>
