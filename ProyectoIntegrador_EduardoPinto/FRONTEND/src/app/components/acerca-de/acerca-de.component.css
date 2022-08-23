@@ -9,19 +9,19 @@ div{
 /*Estilo de la foto de perfil*/
 @media (min-width:576px){
     #fotodeperfil{
-        position: absolute;
-        width: 15%;
+        position: static;
+        width: 175px;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 3%;
-        top: 630px;
+        top: 650px;
     }
 }
 
 @media (max-width:575px){
     #fotodeperfil{
         position: absolute;
-        width: 30%;
+        width: 175px;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 34%;
