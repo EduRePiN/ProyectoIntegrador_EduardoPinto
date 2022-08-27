@@ -41,4 +41,8 @@ export class EditHysComponent implements OnInit {
     )
   }
 
+  cancelar(){
+    this.router.navigate(['']);
+  }
+
 }

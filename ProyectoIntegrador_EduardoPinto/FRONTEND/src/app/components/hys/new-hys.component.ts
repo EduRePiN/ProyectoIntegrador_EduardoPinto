@@ -35,4 +35,8 @@ export class NewHysComponent implements OnInit {
     )
   }
 
+  cancelar(){
+    this.router.navigate(['']);
+  }
+
 }

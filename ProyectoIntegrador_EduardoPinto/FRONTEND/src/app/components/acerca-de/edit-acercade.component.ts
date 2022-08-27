@@ -23,7 +23,7 @@ export class EditAcercadeComponent implements OnInit {
       data =>{
         this.usuario = data;
       }, err =>{
-        alert("Error al modificar 1");
+        alert("Error al modificar");
         this.router.navigate(['']);
       }
     )
@@ -35,10 +35,14 @@ export class EditAcercadeComponent implements OnInit {
       data =>{
         this.router.navigate(['']);
       }, err =>{
-        alert("Error al modificar 2");
+        alert("Error al modificar");
         this.router.navigate(['']);
       }
     )
+  }
+
+  cancelar(){
+    this.router.navigate(['']);
   }
 
 }

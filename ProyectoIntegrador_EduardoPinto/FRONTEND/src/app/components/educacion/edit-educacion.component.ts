@@ -41,4 +41,8 @@ export class EditEducacionComponent implements OnInit {
     )
   }
 
+  cancelar(){
+    this.router.navigate(['']);
+  }
+
 }

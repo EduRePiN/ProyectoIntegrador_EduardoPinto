@@ -23,7 +23,10 @@
                     <input type="text" class="form-control" id="imgE" name="imgE" [(ngModel)]="usuario.imgE" required>
                 </div>
                 <button class="btn btn-primary" id="forms">
-                    Editar usuario
+                    Actualizar
+                </button>
+                <button (click)="cancelar()" class="btn btn-secondary">
+                    Cancelar
                 </button>
             </form>
         </div>
