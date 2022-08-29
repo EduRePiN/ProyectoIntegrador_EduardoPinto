@@ -79,6 +79,7 @@ public class CProyecto {
         Proyecto proyecto = sProyecto.getOne(id).get();
         proyecto.setNombreE(dtoproyecto.getNombreE());
         proyecto.setDescripcionE(dtoproyecto.getDescripcionE());
+        proyecto.setUrlE(dtoproyecto.getUrlE());
         
         sProyecto.save(proyecto);
         return new ResponseEntity(new Mensaje("Proyecto actualizada"), HttpStatus.OK);
