@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     overflow-x : hidden;
+    background-color: #918a8a;
+    opacity: 2;
+    background-image: linear-gradient(#4e4444 1px, transparent 1px), linear-gradient(to right, #4e4444 1px, #4e4444 1px);
+    background-size: 20px 20px;
+    box-sizing: border-box;
     }
+

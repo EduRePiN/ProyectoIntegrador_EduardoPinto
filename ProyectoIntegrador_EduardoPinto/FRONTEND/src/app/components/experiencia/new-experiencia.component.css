@@ -1,13 +1,13 @@
-#forms{
-    margin: 8px;
+.form-group{
+    margin: 10px;
+    
 }
 
 div{
-    background-color: rgb(110, 179, 176);
+    background-color: beige;
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 20px;
     border-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

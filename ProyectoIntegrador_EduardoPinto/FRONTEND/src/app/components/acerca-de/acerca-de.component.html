@@ -1,21 +1,19 @@
-<div class="container-fluid" *ngFor="let persona of persona">
-    <div class="row" >
-        <div class="col-md-2 text-center">
-            <img src="{{persona.imgE}}" class="img-fluid img-perfil" id="fotodeperfil">
-        </div>
-        <div class="col-md-2 text-center">     
-            <h3 class="fw-bold mt-3" id="nombre">{{persona.nombreE}}</h3>
-            <h3 class="fw-bold mt-3" id="nombre">{{persona.apellidoE}}</h3>
-            <span>{{persona.tituloE}}</span>
-        </div>
-
-        <div class="col-md-8 p-5">
-                <h3 class="fw-bold">Acerca de mí</h3>
-                <p>{{persona.descripE}}</p>   
-                <div class="edit-persona-btn text-end" *ngIf="isLogged"> 
-                    <button class="btn btn-light edit-button m-1" routerLink="/editusuario/{{persona.id}}">
-                            <i class="bi bi-pencil-fill"></i></button>
-                </div>
-        </div>     
+<div class="row" *ngFor="let persona of persona">
+    <div class="col-lg-2 text-center">
+        <img src="{{persona.imgE}}" class="img-fluid img-perfil" id="fotodeperfil">
     </div>
+    <div class="col-lg-2 text-center">     
+        <h3 class="fw-bold mt-3" id="nombre">{{persona.nombreE}}</h3>
+        <h3 class="fw-bold mt-3" id="nombre">{{persona.apellidoE}}</h3>
+        <span>{{persona.tituloE}}</span>
+    </div>
+
+    <div class="col-lg-8 p-5">
+            <h3 class="fw-bold">Acerca de mí</h3>
+            <p>{{persona.descripE}}</p>   
+            <div class="edit-persona-btn text-end" *ngIf="isLogged"> 
+                <button class="btn btn-light edit-button m-1" routerLink="/editusuario/{{persona.id}}">
+                        <i class="bi bi-pencil-fill"></i></button>
+            </div>
+    </div>     
 </div>
