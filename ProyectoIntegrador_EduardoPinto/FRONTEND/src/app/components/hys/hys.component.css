@@ -1,4 +1,35 @@
-.row{
-    background-color: #a1b5cb;
+.container{
+    display: grid;
+    place-items: center;
+}
+
+#general{
+    background-color: #c0c0c0;
+    border-color: rgba(164, 72, 41, 0.55);
     padding: 20px;
+    border-style: solid;
+    border-radius: 30px;
+    margin: 15px 15px;
+}
+
+#circulos{
+    padding: 20px;
+    border-color: rgba(164, 72, 41, 0.55);
+    background-color: #d8d8d8;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 4px;
+    margin: 15px 15px;
+    display: grid;
+    place-items: center;
+}
+
+
+h1, p{
+    display: inline;
+    text-align: justify;
+}
+
+p{
+    font-weight: bold;
 }
