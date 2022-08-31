@@ -3,7 +3,6 @@
     background-color: #c0c0c0;
     border-style: solid;
     border-radius: 30px;
-    border-width: 4px;
     border-color: rgba(164, 72, 41, 0.55);
     margin: 15px 15px;
 }
@@ -11,15 +10,15 @@
 div{
     background: #d8d8d8;
     border-radius: 20px;
+}
+
+.card-body{
+    margin: 15px 15px;
+}
+
+.card{
     border-style: solid;
     border-color: rgba(164, 72, 41, 0.55);
-}
+    margin: 10px 10px;
 
-h1, h3, h5{
-    display: inline;
-    text-align: justify;
-}
-
-.img-proyecto{
-    box-shadow: 10px 10px 30px #000000;
 }

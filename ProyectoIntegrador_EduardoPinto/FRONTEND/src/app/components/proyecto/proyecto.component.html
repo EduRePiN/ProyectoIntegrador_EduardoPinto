@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" id="general">
     <h1>Proyectos realizados</h1>
     <span routerLink="/nuevoproyec" *ngIf="isLogged">
         <button type="button" class="btn btn-dark">
@@ -6,7 +6,23 @@
         </button>
         <br><br>
     </span>
-    <div class="col-lg-12">
+    <div class="card" style="width: 18rem;" *ngFor="let Proyecto of proyecto">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{Proyecto.nombreE}}</h5>
+            <p class="card-text">{{Proyecto.descripcionE}}</p>
+            <a href="{{Proyecto.urlE}}" target="_blank" class="btn btn-outline-primary">Link</a>
+            <span *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="./editproyec/{{Proyecto.id}}">
+                    <i class="bi bi-pencil-fill"></i></button>
+            </span>
+            <span *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                    <i class="bi bi-trash-fill"></i></button>
+            </span>
+        </div>
+    </div>
+<!--     <div class="col-lg-12">
         <table class="table">
             <tbody>
                 <tr *ngFor="let Proyecto of proyecto">
@@ -29,5 +45,5 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+    </div> -->
 </div>
