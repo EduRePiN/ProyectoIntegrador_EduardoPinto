@@ -17,14 +17,16 @@ public class Proyecto {
     private String nombreE;
     private String descripcionE;
     private String urlE;
+    private String imgE;
 
     public Proyecto() {
     }
 
-    public Proyecto(String nombreE, String descripcionE, String urlE) {
+    public Proyecto(String nombreE, String descripcionE, String urlE, String imgE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.urlE = urlE;
+        this.imgE = imgE;
     }
 
     public int getId() {
@@ -57,6 +59,14 @@ public class Proyecto {
 
     public void setUrlE(String urlE) {
         this.urlE = urlE;
+    }
+    
+    public String getImgE() {
+        return imgE;
+    }
+    
+    public void setImgE(String imgE) {
+        this.imgE = imgE;
     }
 
     
