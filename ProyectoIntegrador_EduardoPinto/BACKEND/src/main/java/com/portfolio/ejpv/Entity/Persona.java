@@ -36,7 +36,7 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String nombreE, String apellidoE, String acercaDeE, String tituloE, String imgE) {
+    public Persona(String nombreE, String apellidoE, String descripE, String tituloE, String imgE) {
         this.nombreE = nombreE;
         this.apellidoE = apellidoE;
         this.descripE = descripE;

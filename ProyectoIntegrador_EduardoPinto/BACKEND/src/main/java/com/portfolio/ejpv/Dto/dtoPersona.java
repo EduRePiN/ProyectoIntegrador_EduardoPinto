@@ -22,11 +22,11 @@ public class dtoPersona {
     public dtoPersona() {
     }
 
-    public dtoPersona(String nombreE, String apellidoE, String imgE, String acercadeE, String tituloE) {
+    public dtoPersona(String nombreE, String apellidoE, String imgE, String descripE, String tituloE) {
         this.nombreE = nombreE;
         this.apellidoE = apellidoE;
         this.imgE = imgE;
-        this.descripE = acercadeE;
+        this.descripE = descripE;
         this.tituloE = tituloE;
     }
 

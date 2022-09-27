@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/skills")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendejpv.web.app")
 public class CSkills {
     @Autowired
     SSkills sSkills;
@@ -66,7 +66,7 @@ public class CSkills {
        return new ResponseEntity(new Mensaje("Skill agregado"), HttpStatus.OK);
    }
    
-   @PutMapping("update/{id}")
+   @PutMapping("/update/{id}")
    public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoSkills dtoskills){
        if(!sSkills.existsById(id))
            return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
